@@ -1,3 +1,16 @@
+#+options: numbering:nil ':t
 #+title: Combinatorics through Guided Discovery
 #+subtitle: Chapter 1
 
+* [1.2] Basic Counting Principles
+
+** Problem 1
+Label the schools "Team 1"\ldots"Team 5." Team 1 has to play Teams 2, 3, 4, and
+5 (4 games); Team 2 already played Team 1 but still has to play Teams 3, 4, and
+5 (3 games); \ldots; Team 4 already played Teams 1, 2, and 3 but still has to
+play Team 5 (1 game); and Team 5 has already played every other team. Thus the
+total number of games is for $n=5$ teams is
+
+\begin{equation}
+  \sum_{i=1}^5 (n-i) = 4 + 3 + 2 + 1 + 0 = 10.
+\end{equation}
