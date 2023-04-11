@@ -14,3 +14,28 @@ total number of games is for $n=5$ teams is
 \begin{equation}
   \sum_{i=1}^5 (n-i) = 4 + 3 + 2 + 1 + 0 = 10.
 \end{equation}
+
+** Problem 2
+1. Team 1 has to play in $n - 1$ games.
+2. Team 2 has to play in $n - 2$ games.
+3. Team $i$ has to play in $n - i$ games.
+4. As in Problem 1, for $n$ teams
+
+\begin{align}
+  \sum_{i=1}^n (n-i) &= n^2 - \sum_{i=1}^n i.
+  % &= (n-1) + (n-2) + \ldots + [n-(n-1)] + (n-n)
+\end{align}
+
+Let's check that for $n=5$, which we calculated in the previous problem:
+
+\begin{align*}
+  \sum_{i=1}^n (n-i) &= n^2 - \sum_{i=1}^n i \\
+                     &= 5^2 - \sum_{i=1}^5 \\
+                     &= 25 - (1 + 2 + 3 + 4 + 5) \\
+                     &= 25 - 15 = 10. \: \checkmark
+\end{align*}
+
+** Problem 3
+There are 5 kinds of filling for bread 1, 5 kinds of filling for bread 2, and 5
+kinds of filling for bread 3, so there are $N_f \cdot N_b = 15$ options, where
+$N_f$ is number of kinds of filling and $N_b$ is number of kinds of bread.
