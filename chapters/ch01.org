@@ -1,8 +1,9 @@
-#+options: numbering:nil ':t
+#+options: ':t toc:nil num:nil
+#+latex_header: \renewcommand{\labelenumi}{\textbf{\alph{enumi})}}
 #+title: Combinatorics through Guided Discovery
 #+subtitle: Chapter 1
 
-* [1.2] Basic Counting Principles
+* §1.2 Basic Counting Principles
 
 ** Problem 1
 Label the schools "Team 1"\ldots"Team 5." Team 1 has to play Teams 2, 3, 4, and
