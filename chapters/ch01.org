@@ -65,3 +65,16 @@ as
 \begin{equation}
   \left\{p \in M,\ q \in N : R = (p,q)\right\} \Rightarrow \card(R) = m \cdot n.
 \end{equation}
+
+** Problem 5
+$\#(\text{drinks}) = 5$, $\#(\text{fruit}) = 4$, and per Problem\nbsp{}3,
+$\#(\text{sandwiches}) = 15$, so there are $5 \cdot 4 \cdot 15 = 300$ ways to choose
+between these three items.
+
+** Problem 6
+Because the order of the ice cream scoops matters (i.e. cones are distinct for
+the same flavors in different orders), we don't have to worry about double
+counting. $\#(\text{ice cream flavors}) = 12$, so we have $12 \cdot 12 \cdot 12 = 1728$
+possible cones. For cones with distinct flavors, each flavor chosen reduces the
+options by 1, so we have $12 \cdot (12 - 1) \cdot [(12-1) - 1] = 12 \cdot 11 \cdot 10 = 1320$
+possible cones.
