@@ -1,5 +1,7 @@
 #+options: ':t toc:nil num:nil
+#+latex_header: \hypersetup{colorlinks=true}
 #+latex_header: \renewcommand{\labelenumi}{\textbf{\alph{enumi})}}
+#+latex_header: \DeclareMathOperator{\card}{card}
 #+title: Combinatorics through Guided Discovery
 #+subtitle: Chapter 1
 
@@ -40,3 +42,26 @@ Let's check that for $n=5$, which we calculated in the previous problem:
 There are 5 kinds of filling for bread 1, 5 kinds of filling for bread 2, and 5
 kinds of filling for bread 3, so there are $N_f \cdot N_b = 15$ options, where
 $N_f$ is number of kinds of filling and $N_b$ is number of kinds of bread.
+
+** Problem 4
+
+#+begin_quote
+Aside: The *cardinality* of a set is the number of elements in a set, and
+[[https://en.wikipedia.org/wiki/Cardinality][according to Wikipedia]], the following notation for the cardinality of set $A$
+is equivalent:
+
+\begin{equation}
+  |A| \equiv n(A) \equiv \bbar{A} \equiv \card(A) \equiv \#A
+\end{equation}
+
+[Note that \verb+\card+ is not defined in \verb+amsmath+ or \verb+amssymb+, so
+you have to add \verb+\DeclareMathOperator{\card}{card}+ to your preamble.]
+#+end_quote
+
+For $\card(M) = m$ and $\card(N) = n$, the number of distinct ordered pairs
+$(p, q); p \in M, q \in N$ is $m \cdot n$. In [[https://en.wikipedia.org/wiki/Set-builder_notation][set-builder notation]], we could write that
+as
+
+\begin{equation}
+  \left\{p \in M,\ q \in N : R = (p,q)\right\} \Rightarrow \card(R) = m \cdot n.
+\end{equation}
