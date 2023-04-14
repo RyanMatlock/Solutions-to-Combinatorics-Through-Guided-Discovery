@@ -1,0 +1,9 @@
+#+title: Selected Solutions to Combinatorics Through Guided Discovery
+
+I didn't take any discrete math in college, so I'm trying to make up for it by
+slowly working through Kenneth P. Bogart's [[https://bogart.openmathbooks.org][Combinatorics Through Guided
+Discovery]] (available for free under the [[https://www.gnu.org/licenses/fdl-1.3.html][GNU Free Documentation License]]---the
+late Dr. Bogart was a mensch).
+
+For now, I plan to use Org mode to show my work because it's still relatively
+easy to use LaTeX within it, and it's also relatively easy to convert to HTML.
