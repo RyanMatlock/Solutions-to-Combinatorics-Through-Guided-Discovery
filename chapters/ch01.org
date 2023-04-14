@@ -4,6 +4,10 @@
 #+html_head: <style>ol { list-style-type: lower-alpha; }</style>
 #+latex_header: \DeclareMathOperator{\card}{card}
 #+html_head: \( \DeclareMathOperator{\card}{card} \)
+#+latex_header: \newcommand\set[1]{\left\{#1\right\}}
+#+html_head: \( \newcommand\set[1]{\left\{#1\right\}} \)
+#+latex_header: \newcommand\Card[1]{\left|#1\right|}
+#+html_head: \( \newcommand\Card[1]{\left|#1\right|} \)
 #+title: Combinatorics Through Guided Discovery
 #+subtitle: Chapter 1
 
