@@ -1,3 +1,7 @@
 # derived files
 *.tex
 *.pdf
+*.html
+
+# LaTeX intermediate files
+*.aux
