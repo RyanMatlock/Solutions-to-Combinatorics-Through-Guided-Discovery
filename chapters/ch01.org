@@ -1,8 +1,8 @@
 #+options: ':t toc:nil num:nil
 #+latex_header: \hypersetup{colorlinks=true}
-#+latex_header: \renewcommand{\labelenumi}{\textbf{\alph{enumi})}}
+#+latex_header: \renewcommand{\labelenumi}{\textbf{(\alph{enumi})}}
 #+latex_header: \DeclareMathOperator{\card}{card}
-#+title: Combinatorics through Guided Discovery
+#+title: Combinatorics Through Guided Discovery
 #+subtitle: Chapter 1
 
 * §1.2 Basic Counting Principles
@@ -51,7 +51,7 @@ Aside: The *cardinality* of a set is the number of elements in a set, and
 is equivalent:
 
 \begin{equation}
-  |A| \equiv n(A) \equiv \bbar{A} \equiv \card(A) \equiv \#A
+  |A| \equiv n(A) \equiv \overline{\overline{A}} \equiv \card(A) \equiv \#A
 \end{equation}
 
 [Note that \verb+\card+ is not defined in \verb+amsmath+ or \verb+amssymb+, so
