@@ -2,6 +2,7 @@
 #+latex_header: \hypersetup{colorlinks=true}
 #+latex_header: \renewcommand{\labelenumi}{\textbf{(\alph{enumi})}}
 #+latex_header: \DeclareMathOperator{\card}{card}
+#+html_head: \( \DeclareMathOperator{\card}{card} \)
 #+title: Combinatorics Through Guided Discovery
 #+subtitle: Chapter 1
 
