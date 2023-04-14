@@ -84,3 +84,87 @@ counting. $\#(\text{ice cream flavors}) = 12$, so we have $12 \cdot 12 \cdot 12 
 possible cones. For cones with distinct flavors, each flavor chosen reduces the
 options by 1, so we have $12 \cdot (12 - 1) \cdot [(12-1) - 1] = 12 \cdot 11 \cdot 10 = 1320$
 possible cones.
+
+** Problem 7
+
+a. For $S = \{1,2\}$, $T = \{a,b\}$, $f,g,\ldots: S \to T$:
+
+   \begin{align*}
+     f(1) = a,&\ f(2) = b \\
+     g(1) = b,&\ g(2) = a \\
+     h(1) = a,&\ h(2) = a \\
+     j(1) = b,&\ j(2) = b
+   \end{align*}
+
+   +I'm a little fuzzy about $h$ and $j$ because I'm unsure if each element of
+   $T$ must have an element of $\{x \in S : f(x)\}$ pointing to it, but if that
+   isn't a requirement, then $h$ and $j$ are valid.+ I feel more confident
+   about $h$ and $j$ because of part\nbsp{}c where there two "inputs" mapped to three
+   "outputs."
+
+For the follwing parts of the problem, consider $S = \set{1}$; $T = \set{a,
+b}$; $f, g, \ldots : S \to T$ and $S' = \set{1, 2}$; $T' = \set{a}$; $f', g',
+\ldots: S' \to T'$:
+
+\begin{align*}
+  \begin{gathered}
+    f(1) = a \\
+    g(1) = b \\
+    f'(1) = a,\; f'(2) = a.
+  \end{gathered}
+\end{align*}
+
+There are two ways to write a function $f : S \to T$ and only one way to write a
+function $f' : S' \to T'$.
+
+I think in general, there are $\Card{Q}^{\Card{P}}$ ways of writing a function
+$g : P \to Q$
+
+
+b. [@2]For $S = \{1,2,3\}$, $T = \{a,b\}$, $f,g,\ldots: S \to T$:
+
+   \begin{align*}
+     \begin{gathered}
+       f(1) = a,\ f(2) = a,\ f(3) = a \\
+       g(1) = a,\ g(2) = a,\ g(3) = b \\
+       h(1) = a,\ h(2) = b,\ h(3) = a \\
+       j(1) = a,\ j(2) = b,\ j(3) = b \\
+       k(1) = b,\ k(2) = a,\ k(3) = a \\
+       m(1) = b,\ m(2) = a,\ m(3) = b \\
+       p(1) = b,\ p(2) = b,\ p(3) = a \\
+       q(1) = b,\ q(2) = b,\ q(3) = b \\
+     \end{gathered}
+   \end{align*}
+
+   Counting the above functions, we see that there are 8 ways to write a
+   function $f : S \to T$, which agrees with the earlier statement that the
+   number should be $\Card{T}^{\Card{S}} = 2^3 = 8$.
+
+c. For $S = \{a,b\}$, $T = \{1,2,3\}$, and $f,g,\ldots: S \to T$:
+
+   \begin{align*}
+     f(a)=1,\ f(b)=1 &\qquad j(a)=2,\ j(b)=1 \quad& p(a)=3,\ p(b)=1 \\
+     g(a)=1,\ g(b)=2 &\qquad k(a)=2,\ k(b)=2 \quad& q(a)=3,\ q(b)=2 \\
+     h(a)=1,\ h(b)=3 &\qquad m(a)=2,\ m(b)=3 \quad& r(a)=3,\ r(b)=3
+   \end{align*}
+
+   Counting the above, we see that there are 9 ways to write a function $f : S
+   \to T$, which agrees with the formula $\Card{T}^{\Card{S}} = 3^2 = 9$.
+
+d. For $\Card{S} = 3$ and $\Card{T} = 12$, there are $12^3 = 1728$ functions
+   $f : S \to T$.
+
+e. Based on problem\nbsp{}6, there are $12 \cdot 11 \cdot 10 = 1320$ one-to-one functions
+   from a set of three elements to a set of 12 elements. I think the general
+   formula for the number of injections, $f : S \to T$ (i.e. one-to-one
+   functions) is
+
+   \begin{equation}
+     \Card{f} = \frac{\Card{T}!}{\left[\Card{T}-\Card{S}\right]!}.
+   \end{equation}
+
+f. The three ice cream scoops in Problem\nbsp{}6 represent the *domain* of the
+   problem, and the ice cream flavors represent the *range*. The act of
+   choosing flavors is a mapping between the scoop positions and the
+   flavors. Forcing a constraint of unique flavors for each scoop transforms
+   choosing into an injection/one-to-one function.
